@@ -1,0 +1,23 @@
+{
+  "exclude": ["./node_modules", ".nuxt", "./server"],
+  "extends": "@nuxt/typescript",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": ["@types/node", "@nuxt/vue-app"],
+    "target": "es5",
+    "lib": ["dom", "es2015"],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "~/*": ["./*"]
+    }
+  }
+}
